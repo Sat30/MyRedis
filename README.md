@@ -17,7 +17,8 @@
 
 
 ##### Our Custom Protocol
-![image](https://github.com/Sat30/MyRedis/assets/101095981/59c948e4-3b23-4665-a764-0e559cc7c8a0)
+![image](https://github.com/Sat30/MyRedis/assets/101095981/319074a1-139a-456e-87fb-b9252bfbb080)
+
 
 
 - Used **Type Length Value (TLV) Scheme** to do **Data serialization** 
@@ -28,7 +29,8 @@
 - In my Redis value can be primitive Data structure or String or Sorted Set
 - **Selecting and designing a in memory data structure  to efficiently store key-value pairs while ensuring fast lookup.**
 
-![image](https://github.com/Sat30/MyRedis/assets/101095981/b66e3854-2877-4b1e-bca8-073dcb0a8e22)
+![image](https://github.com/Sat30/MyRedis/assets/101095981/42372a9a-7b4e-4c0c-9a27-2af77106bf60)
+
 
 ###### Hash Table :
 - Employed Open Hashing (Chaining) to manage collisions when two keys (`key1` and `key2`) produce the same hash value `(hash(key1) == hash(key2))`.
@@ -52,7 +54,8 @@
 - To facilitate kicking out idle TCP connections, we set the poll() timeout value to the nearest timer associated with a connection. 
 - To determine the nearest timer, we utilize a straightforward linked list that maintains the order of timers. Whenever a new timer is added or an existing one is updated, it is placed at the end of the list
   
-![image](https://github.com/Sat30/MyRedis/assets/101095981/8458eef5-2739-406f-b0c0-bfd854a887dd)
+![image](https://github.com/Sat30/MyRedis/assets/101095981/b770ddaf-abc6-4767-a188-1abf702cad5f)
+
 
 
 ##### TTL
